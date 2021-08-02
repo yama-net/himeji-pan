@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    color: #555;
+}
+
+.title {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+.sub-title::before,
+.sub-title::after {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    margin: 0 20px;
+    background-color:#555;
+    vertical-align: middle;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1.5rem;
+}
+
+.container {
+    height: 100vh;
+    overflow: auto;
+}
+
+section {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* bakery */
+.bakery {
+    background-image: url(images/umeda-bakery4.jpg);
+    color: #fff;
+    text-align: center;
+    padding-top: 30vh;
+}
+
+/* menu */
+.menu {
+    background-image: url(images/umeda-bakery2.jpg);
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.menu-list {
+    margin-left: 60px;
+}
+
+.menu-list tr {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+.menu-list th {
+    font-weight: normal;
+}
+
+.menu-list td {
+    padding-left: 1rem;
+}
+
+/* CONTACT */
+.contact {
+    background-image: url(images/umeda-bakery3.jpg);
+    text-align: center;
+    padding-top: 8vh;
+}
+
+.btn {
+    background: green;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 2rem 0 2.25rem;
+}
+
+.btn:hover {
+    opacity: 0.95;
+}
+
+.sns p {
+    font-size: 0.9rem;
+}
+
+.contact-sns {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-sns a {
+    background: #fff;
+    width: 3.75rem;
+    height: 3.75rem;
+    display: inline-block;
+    margin: 0.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: .75rem 0 0 .125rem;
+}
+
+.contact-sns a:hover {
+    background: rgba(255, 255, 255, .5);
+}
+
+/* モバイル */
+@media (max-width: 700px) {
+    .title {
+        font-size: 4rem;
+    }
+    p {
+        padding: 0 1rem;
+    }
+    p,
+    .menu-list li {
+        font-size: 1rem;
+    }
+    .hero {
+        padding-top: 12vh;
+    }
+}
